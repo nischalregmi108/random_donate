@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Random Wealth Exchange Simulation</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+body{
+    font-family:Arial;
+    width:1000px;
+    margin:auto;
+    background:#fafafa;
+}
+
+h1,h2,h3{
+    text-align:center;
+}
+
+fieldset{
+    margin:20px;
+    padding:15px;
+}
+
+label{
+    display:inline-block;
+    width:220px;
+}
+
+input{
+    width:120px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    margin-top:15px;
+}
+
+.chart{
+    width:900px;
+    margin:auto;
+}
+
+#results{
+    background:white;
+    border:1px solid #ccc;
+    padding:10px;
+    min-height:120px;
+    white-space:pre-wrap;
+    font-family:Consolas;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    color:gray;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Random Wealth Exchange Simulation</h1>
+
+<h3>
+Nischal Regmi<br>
+Southasia Institute for History and Philosophy<br>
+2026
+</h3>
+
+<fieldset>
+
+<legend><b>Model Parameters</b></legend>
+
+<p>
+<label>Number of Agents</label>
+<input id="agents" type="number" value="1000">
+</p>
+
+<p>
+<label>Number of Iterations</label>
+<input id="iterations" type="number" value="300">
+</p>
+
+<p>
+<label>Initial Wealth</label>
+<input id="wealth" type="number" value="10">
+</p>
+
+<p>
+<label>Wealth Donated</label>
+<input id="donation" type="number" value="1">
+</p>
+
+<p>
+
+<label>Execution Order</label>
+
+<input type="radio" name="order" value="linear" checked>
+Linear
+
+<input type="radio" name="order" value="random">
+Random
+
+</p>
+
+<center>
+
+<button onclick="runSimulation()">
+Run Simulation
+</button>
+
+</center>
+
+</fieldset>
+
+<h2>Results</h2>
+
+<div id="results"></div>
+
+<div class="chart">
+<canvas id="histogram"></canvas>
+</div>
+
+<br><br>
+
+<div class="chart">
+<canvas id="giniPlot"></canvas>
+</div>
+
+<footer>
+
+Random Wealth Exchange Simulation<br>
+
+© 2026 Nischal Regmi • Southasia Institute for History and Philosophy
+
+</footer>
+
+<script src="random_donate.js"></script>
+
+</body>
+
+</html>
