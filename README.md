@@ -3,3 +3,5 @@ This is a very basic experiment that demonstrates how ABM can answer some founda
 The town dwellers are very philanthropic. Each year, in a round-robin fashion, a household decides to donate 10% of its wealth to another randomly selected household in the same town. What will happen after 100 years? 200 years? Will all the households in the town remain equally wealthy?
 
 The simulation tool will allow the user to play with the model parameters and observe the ouput.
+
+Note: The JavaScript and HTML implementation in this repository was generated with AI assistance by translating an earlier Python implementation. I reviewed, tested, and adapted the generated code for this project.
